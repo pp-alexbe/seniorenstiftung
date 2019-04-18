@@ -248,7 +248,14 @@ ul {
       }
     }
   }
+
+  .has-3-columns-no-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 $grid-column-gutter / 8;
+  }
 }
+
 //Breadcrumb
 
 .breadcrumb {
@@ -375,6 +382,27 @@ ul {
 
   &.peach {
     border-color: $peach;
+  }
+
+  &.dark-blue {
+    border-color: $dark-blue;
+    margin-right: $grid-column-gutter / 2;
+  }
+
+  &.blue {
+    border-color: $blue;
+    margin-left: $grid-column-gutter / 2;
+  }
+}
+
+// Highlight Box
+
+.highlight-box {
+  background: $white;
+  border-bottom: 10px solid;
+
+  &.dark-blue {
+    border-color: $dark-blue;
   }
 }
 

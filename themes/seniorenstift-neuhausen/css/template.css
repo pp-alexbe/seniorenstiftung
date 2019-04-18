@@ -1434,7 +1434,14 @@ ul {
     .main .section .wp-block-column:nth-child(1) {
       width: 70%; }
     .main .section .wp-block-column:nth-child(2) {
-      width: 30%; } }
+      width: 30%; }
+  .has-3-columns-no-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0 0.41667rem; } }
 
 .breadcrumb {
   display: none; }
@@ -1525,6 +1532,18 @@ ul {
   border-bottom: 10px solid; }
   .teaser-box.peach {
     border-color: #FEA674; }
+  .teaser-box.dark-blue {
+    border-color: #033F67;
+    margin-right: 1.66667rem; }
+  .teaser-box.blue {
+    border-color: #B0D2DF;
+    margin-left: 1.66667rem; }
+
+.highlight-box {
+  background: #ffffff;
+  border-bottom: 10px solid; }
+  .highlight-box.dark-blue {
+    border-color: #033F67; }
 
 #quote {
   border: none;
