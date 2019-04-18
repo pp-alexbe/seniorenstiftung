@@ -1398,7 +1398,7 @@ ul {
     display: none; }
   #main-menu {
     display: block !important;
-    max-width: 33.33333rem; } }
+    max-width: 25rem; } }
 
 .logo {
   margin-left: 6.66667rem;
@@ -1472,11 +1472,11 @@ ul {
     height: 3.33333rem;
     position: absolute;
     top: 0.83333rem;
-    right: 0.10417rem; }
+    right: 0.83333rem; }
 
 @media screen and (min-width: 64em) {
   .box {
-    padding: 3.33333rem; } }
+    padding: 0.83333rem; } }
 
 .head-box {
   background: #033F67;
@@ -1513,7 +1513,12 @@ ul {
     margin-right: 0.55556rem; }
 
 .info-box {
-  background: #C4D35D; }
+  background: #C4D35D;
+  position: relative; }
+  .info-box .heart {
+    width: 20%;
+    position: absolute;
+    bottom: .3rem; }
 
 .teaser-box {
   background: #ffffff;
@@ -1556,4 +1561,4 @@ ul {
           -ms-flex-pack: justify;
               justify-content: space-between; }
     .footer .copyright {
-      padding-left: 8.66667rem; } }
+      padding-left: 16.33333rem; } }

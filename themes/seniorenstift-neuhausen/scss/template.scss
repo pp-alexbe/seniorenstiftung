@@ -190,7 +190,7 @@ ul {
 
   #main-menu {
     display: block !important;
-    max-width: rem-calc(600);
+    max-width: rem-calc(450);
   }
 }
 // Logo
@@ -307,12 +307,12 @@ ul {
     height: rem-calc(60);
     position: absolute;
     top: $grid-column-gutter / 4;
-    right: $grid-column-gutter / 32;
+    right: $grid-column-gutter / 4;
   }
 }
 @include breakpoint(xlarge) {
   .box {
-    padding: $grid-column-gutter;
+    padding: $grid-column-gutter / 4;
   }
 }
 // Head Box
@@ -359,6 +359,13 @@ ul {
 
 .info-box {
   background: $green;
+  position: relative;
+
+  .heart {
+    width: 20%;
+    position: absolute;
+    bottom: .3rem;
+  }
 }
 // Teaser Boxen
 
@@ -370,6 +377,7 @@ ul {
     border-color: $peach;
   }
 }
+
 // Zitat
 
 #quote {
@@ -423,7 +431,7 @@ ul {
       justify-content: space-between;
     }
     .copyright {
-      padding-left: $grid-column-gutter * 2.6;
+      padding-left: $grid-column-gutter * 4.9;
     }
   }
 }
