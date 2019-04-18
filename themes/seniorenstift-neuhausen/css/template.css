@@ -1289,7 +1289,7 @@ ul {
 .menu-button {
   cursor: pointer;
   background: #B0D2DF;
-  height: 5rem;
+  height: 5.06667rem;
   margin-right: 0.83333rem;
   width: 5rem; }
   .menu-button.active .menu-button-inner {
@@ -1385,7 +1385,7 @@ ul {
     font-size: 1.16667rem;
     padding: 0.55556rem 1.66667rem; }
     #main-menu a:focus, #main-menu a:hover {
-      background: url(../img/arrow-right.svg) no-repeat #033F67 right;
+      background: url(/img/arrow-right.svg) no-repeat #033F67 right;
       color: #ffffff;
       text-decoration: none; }
 

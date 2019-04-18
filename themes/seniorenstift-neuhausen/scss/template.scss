@@ -72,7 +72,7 @@ ul {
 .menu-button {
   cursor: pointer;
   background: $blue;
-  height: $grid-column-gutter*1.5;
+  height: $grid-column-gutter*1.52;
   margin-right: $grid-column-gutter / 4;
   width: $grid-column-gutter*1.5;
 
@@ -172,7 +172,7 @@ ul {
 
     &:focus,
     &:hover {
-      background-image: image(/img/arrow-right.svg) no-repeat $dark-blue right;
+      background: url(/img/arrow-right.svg) no-repeat $dark-blue right;
       color: $white;
       text-decoration: none;
     }
