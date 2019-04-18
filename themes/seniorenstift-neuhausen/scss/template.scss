@@ -49,17 +49,20 @@ img {
   height: auto;
 }
 
-p, ul, ol {
+ol,
+p,
+ul {
   font-size: rem-calc(21);
 }
-
 @include breakpoint(xlarge) {
-  p, ul, ol {
+  ol,
+  p,
+  ul {
     font-size: rem-calc(26);
   }
 }
-
 // Header
+
 .header {
   position: relative;
 }
@@ -169,7 +172,7 @@ p, ul, ol {
 
     &:focus,
     &:hover {
-      background: $dark-blue;
+      background-image: image(/img/arrow-right.svg) no-repeat $dark-blue right;
       color: $white;
       text-decoration: none;
     }
@@ -188,7 +191,6 @@ p, ul, ol {
   #main-menu {
     display: block !important;
     max-width: rem-calc(600);
-
   }
 }
 // Logo
@@ -203,7 +205,6 @@ p, ul, ol {
     height: auto;
   }
 }
-
 @include breakpoint(xxlarge) {
   .logo {
     margin-left: $grid-column-gutter * 10.5;
@@ -306,10 +307,9 @@ p, ul, ol {
     height: rem-calc(60);
     position: absolute;
     top: $grid-column-gutter / 4;
-    right: $grid-column-gutter / 4;
+    right: $grid-column-gutter / 32;
   }
 }
-
 @include breakpoint(xlarge) {
   .box {
     padding: $grid-column-gutter;
@@ -411,12 +411,19 @@ p, ul, ol {
     }
   }
 }
+
+.copyright {
+  padding-left: $grid-column-gutter / 4;
+}
 @include breakpoint(large) {
   .footer {
     padding: $grid-column-gutter / 2;
 
     .wp-block-columns {
       justify-content: space-between;
+    }
+    .copyright {
+      padding-left: $grid-column-gutter * 2.6;
     }
   }
 }
