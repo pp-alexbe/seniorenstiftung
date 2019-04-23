@@ -377,6 +377,7 @@ ul {
 // Teaser Boxen
 
 .teaser-box {
+  width: 100%;
   background: $white;
   border-bottom: 10px solid;
 
@@ -385,13 +386,13 @@ ul {
   }
 
   &.dark-blue {
+    margin-right: $grid-column-gutter/4;
     border-color: $dark-blue;
-    margin-right: $grid-column-gutter / 2;
   }
 
   &.blue {
+    margin-left: $grid-column-gutter/4;
     border-color: $blue;
-    margin-left: $grid-column-gutter / 2;
   }
 }
 
