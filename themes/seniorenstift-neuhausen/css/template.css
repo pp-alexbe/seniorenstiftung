@@ -1385,7 +1385,7 @@ ul {
     font-size: 1.16667rem;
     padding: 0.55556rem 1.66667rem; }
     #main-menu a:focus, #main-menu a:hover {
-      background: url(/img/arrow-right.svg) no-repeat #033F67 right;
+      background: url("/img/arrow-right.svg") no-repeat #033F67 right;
       color: #ffffff;
       text-decoration: none; }
 
@@ -1525,22 +1525,28 @@ ul {
   .info-box .heart {
     width: 20%;
     position: absolute;
-    bottom: .3rem; }
+    bottom: 0.3rem; }
+
+@media screen and (min-width: 64em) {
+  .left {
+    width: 32.5%;
+    margin-right: 0.83333rem; } }
 
 .teaser-box {
   width: 100%;
   background: #ffffff;
-  border-bottom: 10px solid; }
+  border-bottom: 10px solid;
+  margin-right: 0.83333rem; }
   .teaser-box.peach {
     border-color: #FEA674; }
   .teaser-box.dark-blue {
-    margin-right: 0.83333rem;
     border-color: #033F67; }
   .teaser-box.blue {
-    margin-left: 0.83333rem;
+    margin-right: 0;
     border-color: #B0D2DF; }
 
 .highlight-box {
+  width: 66.2%;
   background: #ffffff;
   border-bottom: 10px solid; }
   .highlight-box.dark-blue {

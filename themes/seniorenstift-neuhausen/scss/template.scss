@@ -172,7 +172,7 @@ ul {
 
     &:focus,
     &:hover {
-      background: url(/img/arrow-right.svg) no-repeat $dark-blue right;
+      background: url("/img/arrow-right.svg") no-repeat $dark-blue right;
       color: $white;
       text-decoration: none;
     }
@@ -255,9 +255,7 @@ ul {
     padding: 0 $grid-column-gutter / 8;
   }
 }
-
 //Breadcrumb
-
 .breadcrumb {
   display: none;
 }
@@ -371,34 +369,38 @@ ul {
   .heart {
     width: 20%;
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
+  }
+}
+@include breakpoint(xlarge) {
+  .left {
+    width: 32.5%;
+    margin-right: $grid-column-gutter/4;
   }
 }
 // Teaser Boxen
-
 .teaser-box {
   width: 100%;
   background: $white;
   border-bottom: 10px solid;
+  margin-right: $grid-column-gutter/4;
 
   &.peach {
     border-color: $peach;
   }
 
   &.dark-blue {
-    margin-right: $grid-column-gutter/4;
     border-color: $dark-blue;
   }
 
   &.blue {
-    margin-left: $grid-column-gutter/4;
+    margin-right: 0;
     border-color: $blue;
   }
 }
-
 // Highlight Box
-
 .highlight-box {
+  width: 66.2%;
   background: $white;
   border-bottom: 10px solid;
 
@@ -408,7 +410,6 @@ ul {
 }
 
 // Zitat
-
 #quote {
   border: none;
   padding: $grid-column-gutter $grid-column-gutter/4;
@@ -459,6 +460,7 @@ ul {
     .wp-block-columns {
       justify-content: space-between;
     }
+
     .copyright {
       padding-left: $grid-column-gutter * 4.9;
     }
