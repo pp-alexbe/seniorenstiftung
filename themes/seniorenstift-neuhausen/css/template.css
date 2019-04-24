@@ -1527,11 +1527,6 @@ ul {
     position: absolute;
     bottom: 0.3rem; }
 
-@media screen and (min-width: 64em) {
-  .left {
-    width: 32.5%;
-    margin-right: 0.83333rem; } }
-
 .teaser-box {
   width: 100%;
   background: #ffffff;
@@ -1546,7 +1541,7 @@ ul {
     border-color: #B0D2DF; }
 
 .highlight-box {
-  width: 66.2%;
+  width: 100%;
   background: #ffffff;
   border-bottom: 10px solid; }
   .highlight-box.dark-blue {
@@ -1587,4 +1582,4 @@ ul {
           -ms-flex-pack: justify;
               justify-content: space-between; }
     .footer .copyright {
-      padding-left: 16.33333rem; } }
+      padding-left: 8.66667rem; } }
